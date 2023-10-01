@@ -9,7 +9,7 @@ const questions = [
         ]
     },
     {
-        question: "Se lançarmos uma moeda, qual é a probabilidade do lado 'cara' ficar voltado para cima?",answers:[
+        question: "Se uma moeda é lançada, qual é a probabilidade do lado 'cara' ficar voltado para cima?",answers:[
             {text: "1/2", correct: true},
             {text: "51%", correct: false},
             {text: "3/4", correct: false},
