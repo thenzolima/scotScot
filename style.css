@@ -53,7 +53,7 @@ body{
 }
 
 #question{
-    font-size: clamp(24px, 4vw, 32px);
+    font-size: clamp(24px, 4vw, 28px);
     text-align: center;
     color: var(--bg);
 }
@@ -68,7 +68,7 @@ body{
     width: auto;
     border: 0;
     outline: 0;
-    font-size: clamp(24px, 4vw, 32px);
+    font-size: clamp(24px, 4vw, 28px);
     padding:8px;
     color: var(--white);
     background-color:var(--red);
@@ -91,7 +91,7 @@ body{
     width: auto;
     border: 0;
     outline: 0;
-    font-size: clamp(24px, 4vw, 32px);
+    font-size: clamp(24px, 4vw, 28px);
     padding:8px;
     color: var(--white);
     background-color:var(--red);
