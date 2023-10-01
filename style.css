@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
 :root{
     --bg: #09010D;
     --red: #FF0546;
@@ -9,18 +10,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 700;
+    line-height: 1;
 }
 
 body{
     background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .app{
     background:var(--white);
     width: 90%;
+    height: auto;
     max-width: 600px;
-    margin: 100px auto 0;
+    margin: 100px auto 100px;
     border: 10px solid var(--red);
     border-radius: 10px;
     padding: 30px;
@@ -31,7 +39,7 @@ body{
 }
 
 .logo{
-    width: 15%;
+    width: 75px;
 }
 
 .quiz{
@@ -45,7 +53,10 @@ body{
 
 #question{
     font-size: 32px;
-    text-align: center;}
+    text-align: center;
+    color: var(--bg);
+}
+
 #answer-buttons{
     width: 100%;
     display: flex;
@@ -88,8 +99,8 @@ body{
 }
 
 .correct{
-    background: #9aeabc;
+    background: #66E500;
 }
 .incorrect{
-    background: #ff9393;
+    background: #FF6600;
 }

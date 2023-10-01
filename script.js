@@ -1,6 +1,6 @@
 const questions = [
     {
-        question: "Quantas Formações distintas tem a palavra ameba?",answers:[
+        question: "Quantas formações distintas tem a palavra AMEBA?",answers:[
             {text: "40", correct: false},
             {text: "70", correct: false},
             {text: "60", correct: true},
@@ -9,7 +9,7 @@ const questions = [
         ]
     },
     {
-        question: "Se lançarmos uma moeda, qual é a probabilidade do lado 'cara' ficar voltado para cima",answers:[
+        question: "Se lançarmos uma moeda, qual é a probabilidade do lado 'cara' ficar voltado para cima?",answers:[
             {text: "1/2", correct: true},
             {text: "51%", correct: false},
             {text: "3/4", correct: false},
