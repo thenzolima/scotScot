@@ -23,7 +23,7 @@ const questions = [
             {text: "vinte", correct: false},
             {text: "38", correct: false},
             {text: "3", correct: false},
-            {text: "6*9", correct: true},
+            {text: "8*7*6", correct: true},
         ]
     },
     {
@@ -54,8 +54,7 @@ function startScot() {
 function showQuestion() {
     reset();
     let currentQuestion = questions[current];
-    let questionNo = current + 1;
-    questionElement.innerHTML = questionNo + '.' + currentQuestion.question;
+    questionElement.innerHTML = currentQuestion.question;
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
@@ -79,19 +78,25 @@ function reset() {
 function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
+    
     if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
     } else {
         selectedBtn.classList.add("incorrect");
     }
-    Array.from(answerButtons.children).forEach(button=>{
-        if(button.dataset.correct==="true"){
+
+    Array.from(answerButtons.children).forEach(button => {
+        if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
         button.disabled = true;
     });
-    next.style.display = 'block';
+
+    // Atraso de 3 segundos antes de chamar handleNext
+    setTimeout(() => {
+        handleNext();
+    }, 1500);
 }
 
 function showScore(){
@@ -101,11 +106,11 @@ function showScore(){
     next.style.display = 'block';
 }
 
-function handleNext(){
+function handleNext() {
     current++;
-    if(current < questions.length){
+    if (current < questions.length) {
         showQuestion();
-    }else{
+    } else {
         showScore();
     }
 }
