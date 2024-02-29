@@ -1,6 +1,7 @@
 const questions = [
     {
-        question: "Quantas formações distintas tem a palavra AMEBA?",answers:[
+        question: "Quantas formações distintas tem a palavra AMEBA?",
+        answers:[
             {text: "40", correct: false},
             {text: "70", correct: false},
             {text: "60", correct: true},
@@ -9,7 +10,8 @@ const questions = [
         ]
     },
     {
-        question: "Se uma moeda é lançada, qual é a probabilidade do lado 'cara' ficar voltado para cima?",answers:[
+        question: "Se uma moeda é lançada, qual é a probabilidade do lado 'cara' ficar voltado para cima?",
+        answers:[
             {text: "1/2", correct: true},
             {text: "51%", correct: false},
             {text: "3/4", correct: false},
@@ -18,7 +20,8 @@ const questions = [
         ]
     },
     {
-        question: "De quantas maneiras 8 pessoas podem se sentar num banco que tem apenas 3 lugares?",answers:[
+        question: "De quantas maneiras 8 pessoas podem se sentar num banco que tem apenas 3 lugares?",
+        answers:[
             {text: "12", correct: false},
             {text: "vinte", correct: false},
             {text: "38", correct: false},
@@ -27,7 +30,8 @@ const questions = [
         ]
     },
     {
-        question: "Qual é o número total de possibilidades de resultado no lançamento de 5 moedas?",answers:[
+        question: "Qual é o número total de possibilidades de resultado no lançamento de 5 moedas?",
+        answers:[
             {text: "Dez", correct: false},
             {text: "32", correct: true},
             {text: "2*6", correct: false},
@@ -78,12 +82,16 @@ function reset() {
 function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
-    
+
     if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
+        const audioCorrect = new Audio('sfx/correto.wav');
+        audioCorrect.play();
     } else {
         selectedBtn.classList.add("incorrect");
+        const audioIncorrect = new Audio('sfx/errado.wav');
+        audioIncorrect.play();
     }
 
     Array.from(answerButtons.children).forEach(button => {
@@ -114,7 +122,6 @@ function handleNext() {
         showScore();
     }
 }
-
 
 next.addEventListener("click",()=>{
     if(current < questions.length){
