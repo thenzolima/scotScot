@@ -112,4 +112,26 @@ body{
     body{
         height: auto;
     }
+
+    .quiz{
+        padding: 10px 0; 
+    }
+
+    #question{
+        font-size: 24px;
+    }
+
+    #answer-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn{
+        padding: 10px;
+    }
+
+    #next-btn{
+        display: none;
+    }
 }
