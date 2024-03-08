@@ -113,6 +113,10 @@ body{
         height: auto;
     }
 
+    .logo{
+        width: 60px;
+    }
+
     .quiz{
         padding: 10px 0; 
     }
