@@ -109,7 +109,7 @@ function selectAnswer(e) {
 
 function showScore(){
     reset();
-    questionElement.innerHTML = `Você pontuou ${score} de ${questions.length}!`;
+    questionElement.innerHTML = `Você acertou ${score} de ${questions.length}!`;
     next.innerHTML = "Jogue Novamente";
     next.style.display = 'block';
 }
