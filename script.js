@@ -86,11 +86,11 @@ function selectAnswer(e) {
     if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
-        const audioCorrect = new Audio('sfx/correto.wav');
+        const audioCorrect = new Audio('sfx/correto.mp3');
         audioCorrect.play();
     } else {
         selectedBtn.classList.add("incorrect");
-        const audioIncorrect = new Audio('sfx/errado.wav');
+        const audioIncorrect = new Audio('sfx/errado.mp3');
         audioIncorrect.play();
     }
 
