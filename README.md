@@ -1,4 +1,4 @@
-![](assets/logo.svg)
+<img src="/assets/logo.svg" style="width:100px">
 
 ## Produtora independente de jogos educativo.
 
