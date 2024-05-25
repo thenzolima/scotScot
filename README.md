@@ -1,6 +1,6 @@
-## Scot Scot
+![](assets/logo.svg)
 
-Produtora independente de jogos educativo.
+## Produtora independente de jogos educativo.
 
 ## Jogue Localmente
 
