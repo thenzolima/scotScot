@@ -1,28 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scot Scot</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <div class="app">
-        <img src="assets/logo.svg" alt="" class="logo">
-        <div class="quiz">
-            <h2 id="question">Pergunta Aqui</h2>
-            <div id="answer-buttons">
-                <button class="btn">Resposta 1</button>
-                <button class="btn">Resposta 2</button>
-                <button class="btn">Resposta 3</button>
-                <button class="btn">Resposta 4</button>
-                <button class="btn">Resposta 5</button>
-            </div>
-            <button id="next-btn">Próximo</button>
-        </div>
+    <div class="container">
+        <header>
+            <a href="/">
+                <img src="/assets/logo.svg" alt="">
+            </a>
+            <p class="text">Produtora independente<br>de jogos educativo.</p>
+        </header>
+        <section class="card-container">
+            <article class="card">
+                <div class="content">
+                    <img src="/assets/scotquiz.png" alt="">
+                    <h1 class="title">ScotQuiz</h1>
+                    <p class="decription">Um quiz de assunto diversos. Futuramente ele terá matériais de estudos relacionados as perguntas.</p>
+                </div>
+                <a href="/games/scotQuiz">
+                    <button class="card-btn">Jogar</button>
+                </a>
+            </article>
+            <article class="card">
+                <div class="content">
+                    <img src="/assets/dev.png" alt="">
+                    <h1 class="title">...</h1>
+                    <p class="decription">Este ainda está em desenvolvimento.</p>
+                </div>
+            </article>
+
+        </section>
+        <footer>
+            <p class="text">Feito por <a href="https://www.thenzolima.com.br/">THENZOLIMA</a></p>
+        </footer>
     </div>
-    
-    <script src="script.js"></script>
 </body>
+
 </html>
