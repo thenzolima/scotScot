@@ -1,20 +1,14 @@
 ## Scot Scot
 
-[Em desenvolvimento]
+Produtora independente de jogos educativo.
 
-Scot Scot é um web quiz divertido com o intuito educativo.
-
-## Instalação
+## Jogue Localmente
 
 Basta clonar este repositório usando `git clone`:
 
 ```git
 git clone https://github.com/thenzolima/scotscot
 ```
-
-## License
-
-O projeto está sob a liçenca do MIT.
 
 
 
